@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prediction</title>
+    
+    <link rel="stylesheet" href="{% static '/css_files/prediction.css' %}">
+    
+     <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+</head>
+<body>
+<div class="header1">
+    
+    <h3> Jane Doe</h3>
+    <h3> 3/01/2024</h3>
+    <h3> Provider: M, Smith</h3>
+    
+</div>
+<div class="sec1">
+    <span> DISCLAIMER: These assessments and treatment suggestions are provided as a convenience in support of the physician-patient relationship and are not intended to
+replace the physician’s clinical judgment. They are derived from national guidelines in addition to other evidence and expert opinion. The clinician should consider
+this information within the context of clinical opinion and the individual patient.
+    </span>
+    
+    <h2> Diabetes Risk Report</h2>
+    
+    <p> Current available clinical information based on the parameter's and the prediction model suggests the patient’s risk is at  {{ report }}. 
+    Your patient appears to have at least one CHD risk equivalent </p>
+    
+    <p> Therapeutic lifestyle changes are always valuable to lower risk (diet, exercise, weight management).</p>
+    
+</div>
+
+
+
+</body>
+</html>

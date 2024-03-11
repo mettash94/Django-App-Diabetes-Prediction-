@@ -1,0 +1,151 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{% static '/css_files/dashboard.css' %}">
+    
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+</head>
+<body>
+<div class="main">
+    <div class="nav"> 
+        
+            <img src="{% static '/images/MedCorp (2).png' %}" alt="logo"/>
+            
+            <a href="#">Labs</a>
+            <a href="#">Appointments</a>
+            <a href="#">Orders</a>
+            <a href="#">Billing</a>
+           
+            <span class="material-icons md-48">account_circle</span>
+            
+           
+
+        
+    </div>
+    
+    </div>
+
+<div class="section1"> 
+   
+
+    <span>
+        
+Results are delivered to the Medcorp Patient™ account at the same time they are reported to the healthcare provider (unless state or federal laws restrict timing of delivery).
+    </span>
+    
+    <br>
+    <br>
+    <br>
+    <div class="patient">
+    <h4> Patient Name: Jane Doe </h4>
+        <h4> Date of Birth : 06/18/1985 </h4>
+        <h4> Provider: M Smith</h4>
+        </div>
+   
+    
+
+    
+    
+    
+    <br>
+</div>
+<div class="section2">
+    
+    <form class="prediction" action="prediction">
+
+    <table class="styled-table">
+        <thead>
+            <tr>
+                <th>Parameters</th>
+                <th>Current Result and Flag</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Pregnancies</td>
+                <td><label for="pregnancies"> 
+                    <input type="text" name="pregnancies" id="pregnancies" value="2">
+                </label></td>
+            </tr>
+            <tr>
+            
+                <td>Age</td>
+                <td> <label for="age"> 
+                    <input type="text" name="age" id="age" value="30">
+                </label></td>
+            
+            </tr>
+             <tr>
+            
+                <td>Pedigree</td>
+                <td><label for="pedigree"> 
+                    <input type="text" name="pedigree" id="pedigree" value="0.50" >
+                </label></td>
+            </tr>
+             <tr>
+            
+                <td>BMI</td>
+                <td><label for="bmi"> 
+                    <input type="text" name="bmi" id="bmi" value="35.5">
+                </label></td>
+            </tr>
+            <tr>
+                <td>Glucose</td>
+                <td><label for="glucose"> 
+                    <input type="text" name="glucose" id="glucose" value="110">
+                </label></td>
+            </tr>
+            <tr>
+                <td> Blood Pressure</td>
+                <td><label for="blood_pressure"> 
+                    <input type="text" name="blood_pressure" id="blood_pressure" value="90">
+                </label></td>
+            </tr>
+
+            <tr>
+                <td>Serum Insulin</td>
+                <td><label for="serum_insulin"> 
+                    <input type="text" name="serum_insulin" id="serum_insulin" value="500">
+                </label></td>
+            </tr>
+        
+        <tr> 
+            <td></td>
+            <td> <input type="submit" value="Generate Risk Report"></td>
+        </tr>
+         
+
+            
+
+        </tbody>
+    </table>
+    
+</form>
+    
+    
+
+</div>
+
+
+
+
+
+</body>
+</html> 
